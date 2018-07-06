@@ -1,5 +1,2 @@
-function tarabiscote() {
-  console.log('test');
-}
+import Menu from './composants/Menu';
 
-tarabiscote();

@@ -10,16 +10,17 @@ module.exports = {
     'rules': [
       {
         'test': /\.js$/,
-        'exclude': /(node_modules)/,
-        'use': {
-          'loader': 'babel-loader',
-          'options': {
-            'presets': ['env']
-          }
-        }
+        'exclude': /(node_modules)/
+        // 'use': {
+        //   'loader': 'babel-loader',
+        //   'options': {
+        //     'presets': ['env']
+        //   }
+        // }
       }
     ]
   },
+  devtool: 'source-map',
   'devServer': {
     'contentBase': path.join(__dirname, "dist"),
     'compress': true,
